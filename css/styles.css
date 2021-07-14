@@ -93,6 +93,19 @@ nav a, nav:visited {
     color: #fff;
 }
 
+.hamburger {
+    display: none;
+    width: 35px;
+    height: 5px;
+    background-color: #C87B5E;
+    margin: 6px 0;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
 .nav-title {
     margin-right: 35px;
 }
@@ -159,7 +172,11 @@ nav a, nav:visited {
     color: #35312E;
     max-width: 629px;
     text-align: center;
-    margin: 0px auto 40px;
+    margin: 0px auto;
+}
+
+.brands img {
+    margin-top: 40px;
 }
 
 .brands .wrapper {
@@ -175,7 +192,7 @@ nav a, nav:visited {
 }
 
 .welcome .wrapper {
-    margin: 0 120px 0 135px;
+    margin: 0 130px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -255,10 +272,12 @@ nav a, nav:visited {
     background-color: #D3C2CA;
 }
 
-.pan-construction .wrapper {
-    width: 100%;
+.info-wrapper {
+    width: 706px;
     font-size: 12px;
     color: #6E6259;
+    margin: 0 auto;
+
 }
 
 .pan-construction p {
@@ -268,37 +287,37 @@ nav a, nav:visited {
 }
 
 .pan-construction img {
-    margin-left: 518px;
+    margin-left: 144px;
 }
 
 .modular {
     width: 135px;
-    margin: 83px 0 0 374px;
+    margin: 83px 0 0 0;
 }
 
 .beechwood {
     width: 158px;
-    margin: 36px 0 0 896px;
+    margin: 36px 0 0 522px;
 }
 
 .easy {
     width: 107px;
-    margin: 357px 0 0 454px;
+    margin: 357px 0 0 107px;
 }
 
 .nesting {
     width: 171px;
-    margin: 284px 0 0 888px;
+    margin: 284px 0 0 514px;
 }
 
 .exclusive {
     width: 172px;
-    margin: 472px 0 0 374px;
+    margin: 472px 0 0 0;
 }
 
 .stay {
     width: 160px;
-    margin: 443px 0 0 935px;
+    margin: 443px 0 0 561px;
 }
 
 .stock {
@@ -317,7 +336,7 @@ nav a, nav:visited {
     font-size: 18px;
     max-width: 441px;
     color: #4F463F;
-    margin: 18px auto;
+    margin: 30px auto 0;
 }
 
 .stock .wrapper {
@@ -327,9 +346,11 @@ nav a, nav:visited {
 }
 
 .card {
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 306px;
 }
 
 .card img {
@@ -433,7 +454,7 @@ nav a, nav:visited {
 }
 
 .pans .comment {
-    width: 100%;
+    width: 95%;
 }
 
 .pans .comment {
@@ -501,6 +522,8 @@ nav a, nav:visited {
     font-size: 14px;
     color: #FCFAF6;
     margin-bottom: 62px;
+    width: 97%;
+    line-height: 1.7em;
 }
 
 .touch input {
@@ -526,7 +549,7 @@ nav a, nav:visited {
 }
 
 .info-section .info {
-    width: 496px;
+    max-width: 97%;
 }
 
 .info .navigation {
@@ -538,6 +561,10 @@ nav a, nav:visited {
 
 .column-one, .column-two, .column-three {
     width: 150px;
+}
+
+.info ul {
+    margin: 0;
 }
 
 .info li {
@@ -577,21 +604,22 @@ nav a, nav:visited {
     color: rgba(252, 250, 246, 0.5);
 }
 
-.last-section ul {
+.trivia ul {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 0;
 }
 
-.last-section li {
-    margin-left: 30px;
+.trivia li {
+    margin: 20px 0 0 30px;
 }
 
-.last-section li:first-child {
+.trivia li:first-child {
     margin-left: 0;
 }
 
-.last-section .rectangle {
+.trivia .rectangle {
     background-color: #FCFAF6;
     height: 20px;
     width: 80px;
@@ -607,3 +635,129 @@ nav a, nav:visited {
     justify-content: center;
     align-items: center;
 }
+
+@media screen and (max-width: 1400px) {
+    .pans {
+        flex-direction: column;
+    }
+    .pans .comment {
+        padding: 100px 0;
+    }
+    .pan-food {
+        display: none;
+    }
+    .welcome .wrapper {
+        margin: 0 90px;
+    }
+    .offer {
+        margin-left: 300px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .stock .wrapper {
+        max-width: 742px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+    .brands .wrapper {
+        justify-content: space-between;
+        margin: 0 100px;
+    }
+    .welcome .wrapper {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .welcome h2 {
+        max-width: 95%;
+        margin-bottom: 30px;
+    }
+    .welcome p {
+        max-width: 95%;
+    }
+    .offer {
+        margin-left: 230px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .brands .wrapper {
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+    .touch {
+        padding-left: 0;
+        text-align: center;
+    }
+    .info-section {
+        flex-direction: column;
+    }
+    .info {
+        margin: 50px 0 0 50px;
+    }
+    .offer {
+        margin-left: 130px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .info-wrapper{
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        max-width: 706px;
+        width: auto;
+    }
+    .info-wrapper img {
+        margin: 0;
+        width: 100%;
+    }
+    .info-wrapper p {
+        display: none;
+    }
+    .brands .wrapper {
+        max-width: 420px;
+        flex-wrap: wrap;
+    }
+    .offer {
+        margin-left: 100px;
+    }
+    .last-section {
+        flex-direction: column;
+    }
+    .nav-title, .account {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .info .navigation {
+        max-width: 97%;
+        margin: 0 auto;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .trivia ul {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .offer {
+        margin: 0 auto;
+    }
+    .pan-construction ul {
+        width: 100%;
+    }
+    .brands .wrapper {
+        max-width: 312px;
+    }
+    .touch input {
+        width: 95%;
+    }
+    .column-two, .column-three {
+        margin-top: 20px;
+    }
+}
+
