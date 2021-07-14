@@ -758,7 +758,7 @@ nav a, nav:visited {
         width: 95%;
     }
     .touch input {
-        width: auto;
+        width: calc(100% - 150px);
     }
     .column-two, .column-three {
         margin-top: 20px;
