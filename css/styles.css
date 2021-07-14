@@ -753,8 +753,12 @@ nav a, nav:visited {
     .brands .wrapper {
         max-width: 312px;
     }
-    .touch input {
+    .touch form {
+        margin: 0 auto;
         width: 95%;
+    }
+    .touch input {
+        width: auto;
     }
     .column-two, .column-three {
         margin-top: 20px;
